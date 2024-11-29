@@ -46,7 +46,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: ag1
         default:
           onVariation: "true"
