@@ -52,6 +52,10 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+        targetRules:
+        - targets:
+          - identifier: ltran@axon.com
+          variation: "true"
   - flag:
       name: My_Test_Flag
       identifier: My_Test_Flag
