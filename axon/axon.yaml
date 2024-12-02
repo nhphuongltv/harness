@@ -35,6 +35,19 @@ featureFlags:
             op: segmentMatch
             values:
             - users
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - agency
+        targetRules:
+        - targets:
+          - identifier: ltran@axon.com
+          - identifier: phunguyen@axon.com
+          variation: "true"
   - flag:
       name: hello
       identifier: hello
