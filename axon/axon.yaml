@@ -52,10 +52,15 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-        targetRules:
-        - targets:
-          - identifier: ltran@axon.com
-          variation: "true"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - agency
   - flag:
       name: My_Test_Flag
       identifier: My_Test_Flag
